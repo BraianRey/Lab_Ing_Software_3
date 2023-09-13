@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Lab 1 - Lab ing. software3</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braian Rey Castillo - Curriculum</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="validation.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="https://www.pngall.com/wp-content/uploads/5/Profile-PNG-Free-Image.png" alt="Foto de perfil" alt="Logo Universidad del Cauca" width="200">
+        <h1>Braian Rey Castillo</h1>
+        <p>Dirección: Pajonal, crra 16b #11a-16</p>
+        <p>Teléfono: 3104058041</p>
+        <p>Correo: <span id="correo">braianreyc@unicauca.edu.co</span> <button onclick="copiarCorreo()"><img src="https://cdn-icons-png.flaticon.com/512/54/54702.png" alt="Icono de copiar" width="18"></button></p>
+
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#informacion-academica">Información Académica</a></li>
+            <li><a href="#informacion-laboral">Información Laboral</a></li>
+            <li><a href="#referencias">Referencias</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="informacion-academica">
+        <h2>Información Académica</h2>
+        <ul>
+            <li>Curso Ingeniería en Sistemas en la <a href="https://www.unicauca.edu.co/versionP/" target="_blank">Universidad del Cauca</a></li>
+            <li>Graduado de <a href="https://www.bienestarpolicia.gov.co/index.php?idcategoria=2975" target="_blank">Nuestra Señora de Fátima</a></li>
+        </ul>
+    </section>
+
+    <section id="informacion-laboral">
+        <h2>Información Laboral</h2>
+        <ul>
+            <li>Transportista de paquetería en <a href="https://interrapidisimo.com" target="_blank">Interrapidisimo</a> (2020 - 2022)</li>
+        </ul>
+    </section>
+
+    <section id="referencias">
+    <h2>Referencias</h2>
+    <div class="reference">
+        <div class="reference-details">
+            <p>Nombre: Yimy Andres Campo Bravo</p>
+            <p>Puesto: Profesor</p>
+            <p>Correo: <span id="correo">braianreyc@unicauca.edu.co</span> <button onclick="copiarCorreo()"><img src="https://cdn-icons-png.flaticon.com/512/54/54702.png" alt="Icono de copiar" width="16"></button></p>
+        </div>
+        <div class="reference-image">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjV51q_siwM4-UHSlXd9O39d7XVexWQurYWDMDiROy0PpQ=s32-c" alt="Foto de Yimy Andres Campo Bravo" width="32">
+        </div>
+    </div>
+</section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+      <div class = "informacion-academica">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Logo_de_la_Universidad_del_Cauca.svg/800px-Logo_de_la_Universidad_del_Cauca.svg.png" width="150">
+  </div>
+        <form action="procesar_formulario.php" method="post" onsubmit="return validateForm()">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Braian Rey Castillo</p>
+    </footer>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
